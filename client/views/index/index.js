@@ -8,6 +8,9 @@ Template.Index.events({
    *
    *  }
    */
+   'click img' : function(e,t){
+    Session.set('selectedBank', this._id);
+   }
 });
 
 Template.Index.helpers({

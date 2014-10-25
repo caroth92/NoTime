@@ -36,3 +36,7 @@ Router.map(function() {
 Router.map(function() {
   this.route('DarAlta', {path: '/darAlta'});
 });
+
+Router.route('/two', function () {
+  this.render('BancosItem');
+});
