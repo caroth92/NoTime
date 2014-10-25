@@ -31,7 +31,8 @@ Template.DarAlta.events({
         telefonoParam: telefono,
         horarioLVParam: horarioLV,
         horarioSParam: horarioS,
-        horarioDParam: horarioD
+        horarioDParam: horarioD,
+        tiempoEspera: 0
       }
 
       var id = Bancos.insert(body);

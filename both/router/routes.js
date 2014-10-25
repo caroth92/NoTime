@@ -28,3 +28,5 @@ Router.map(function() {
 Router.map(function() {
   this.route('DarAlta', {path: '/darAlta'});
 });
+Router.route('/', {name: 'telefonia.index'});
+Router.route('/', {name: 'servicios.index'});
