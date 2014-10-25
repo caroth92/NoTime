@@ -22,5 +22,9 @@ Router.map(function() {
 });
 
 Router.map(function() {
+  this.route('BancosIndex', {path: '/bancos'});
+});
+
+Router.map(function() {
   this.route('DarAlta', {path: '/darAlta'});
 });

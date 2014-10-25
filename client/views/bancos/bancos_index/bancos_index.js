@@ -17,6 +17,10 @@ Template.BancosIndex.helpers({
    *    return Items.find();
    *  }
    */
+   sucursalesBancos: function() {
+    console.log("bancos")
+    return Bancos.find();
+   }
 });
 
 /*****************************************************************************/
@@ -26,6 +30,7 @@ Template.BancosIndex.created = function () {
 };
 
 Template.BancosIndex.rendered = function () {
+
 };
 
 Template.BancosIndex.destroyed = function () {

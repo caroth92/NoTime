@@ -1,3 +1,11 @@
 <template name="BancosIndex">
-  client/views/bancos/bancos_index/bancos_index.html
+	{{#each sucursalesBancos}}
+		{{> BancoItem}}
+	{{/each}}
+	hola
+</template>
+
+<template name="BancoItem">
+	<input type="text" value="{{sucursalParam}}">
+	<input type="text" value="{{direccionParam}}">
 </template>

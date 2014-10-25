@@ -12,6 +12,6 @@ Meteor.methods({
   */
   'agrega_banco': function (obj) {
   	var id = Bancos.insert(obj);
-  	console.log(id)
+  	console.log(body)
   }
 });
