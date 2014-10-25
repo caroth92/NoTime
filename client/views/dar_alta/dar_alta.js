@@ -10,7 +10,7 @@ Template.DarAlta.events({
    */
    'submit form': function (e, tmpl) {
       e.preventDefault();
-      var banco = $('#banco').val();
+      var telefonia = $('#banco').val();
       var sucursal = $('#sucursal').val();
       var direccion = $('#direccion').val();
       var numero = $('#numero').val();
@@ -22,7 +22,7 @@ Template.DarAlta.events({
       var horarioD = $('#horarioD').val();
 
       var body = {
-        bancoParam: banco,
+        telefoniaParam: telefonia,
         sucursalParam: sucursal,
         direccionParam: direccion,
         numeroParam: numero,
@@ -35,7 +35,7 @@ Template.DarAlta.events({
         tiempoEspera: 0
       }
 
-      var id = Bancos.insert(body);
+      var id = Telefonia.insert(body);
       console.log(id)
       /*
       Meteor.call('agrega_banco', body, function(err, response){

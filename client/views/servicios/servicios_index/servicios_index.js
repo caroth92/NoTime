@@ -18,9 +18,9 @@ Template.ServiciosIndex.helpers({
    *  }
    */
 
-    sucursalesServicios: function() {
-    console.log("servicios")
-    return Servicios.find();
+  sucursalesServicios: function() {
+    var servicioSeleccionado = Session.get('servicios')
+    return Servicios.find({servicioParam:servicioSeleccionado});
    },
 
     servicios: function () {

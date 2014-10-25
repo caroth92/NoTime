@@ -18,9 +18,9 @@ Template.TelefoniaIndex.helpers({
    *  }
    */
 
-    sucursalesTelefonia: function() {
-    console.log("telefonia")
-    return Telefonia.find();
+  sucursalesTelefonia: function() {
+    var telefoniaSeleccionada = Session.get('telefonia');
+    return Telefonia.find({telefoniaParam: telefoniaSeleccionada});
    },
 
     telefonia: function () {
