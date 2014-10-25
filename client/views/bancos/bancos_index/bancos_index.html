@@ -1,11 +1,35 @@
 <template name="BancosIndex">
-	{{#each sucursalesBancos}}
-		{{> BancoItem}}
-	{{/each}}
-	hola
+	<table class="table table-hover" style = "width:60%" align = "center">
+  		<thead>
+  			<tr>
+  				<th colspan = "2" style = "text-align: center">Banorte</th>
+  			</tr>
+  			<tr>
+  				<th>Sucursal</th>
+  				<th>Direccion</th>
+  				<th>Tiempo Espera</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			{{#each sucursalesBancos}}
+				{{> BancoItem}}
+			{{/each}}
+  		</tbody>
+	</table>
 </template>
 
 <template name="BancoItem">
-	<input type="text" value="{{sucursalParam}}">
-	<input type="text" value="{{direccionParam}}">
+	<tr>
+  		<td><label>{{sucursalParam}}</label></td>
+  		<td><label>{{direccionParam}}</label></td>
+  		<td><label>{{numeroParam}}</label></td>
+  		<td><label>{{coloniaParam}}</label></td>
+  		<td><label>{{cpParam}}</label></td>
+  		<td><label>{{telefonoParam}}</label></td>
+  		<td><label>{{horaLVParam}}</label></td>
+  		<td><label>{{horaSParam}}</label></td>
+  		<td><label>{{horaDParam}}</label></td>
+  	</tr>
+	
+	
 </template>

@@ -34,8 +34,9 @@ Template.DarAlta.events({
         horarioDParam: horarioD
       }
 
-      console.log(body);
-
+      var id = Bancos.insert(body);
+      console.log(id)
+      /*
       Meteor.call('agrega_banco', body, function(err, response){
         if(err){
           console.log("error");
@@ -43,6 +44,7 @@ Template.DarAlta.events({
         }
         return true;
       });
+      */  
    }
 });
 
