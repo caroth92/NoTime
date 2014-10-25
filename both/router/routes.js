@@ -18,5 +18,9 @@ Router.map(function() {
 });
 
 Router.map(function() {
+  this.route('TableItem', {path: '/table'});
+});
+
+Router.map(function() {
   this.route('DarAlta', {path: '/darAlta'});
 });
