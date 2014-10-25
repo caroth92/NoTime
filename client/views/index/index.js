@@ -8,8 +8,12 @@ Template.Index.events({
    *
    *  }
    */
-   'click img' : function(e,t){
-    Session.set('selectedBank', this._id);
+   'click #Banamex' : function(e,t){
+    Session.set('bank', 'Banamex');
+   },
+
+   'click #Banorte' : function(e,t){
+    Session.set('bank', 'Banorte');
    }
 });
 
