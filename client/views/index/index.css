@@ -20,11 +20,27 @@ div .img {
 	display: inline;
 }
 
-#footer{position:absolute;bottom:0;width:100%;height:200px;overflow:hidden}
 
-#footer{background:#2A2A2A;color:#707070}
+#footer{
+	position:relative;
+	bottom:0;
+	width:100%;
+	height:40px;
+	overflow:hidden;
+	background:#2A2A2A;
+	color:#707070;
+}
 
-#footer ul{width:780px;margin-left:160px;padding:52px 0 20px}
-#footer li{display:inline-block;width:140px;margin-right:20px;vertical-align:top;line-height:1.6}
-#footer li:first-child{width:300px}#footer li:last-child{width:120px}
-#footer li>*{display:block}#footer li a{color:#FFF;text-decoration:none}
+#footer ul{
+	list-style-type:none;
+}
+
+#footer ul li{
+	display:inline;
+	float:right;
+}
+
+#footer ul li a{
+	padding:10px;
+	color:white;
+}
