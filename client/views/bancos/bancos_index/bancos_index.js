@@ -22,7 +22,17 @@ Template.BancosIndex.helpers({
     return Bancos.find();
    },
 
+   verde: function () {
+    return true;
+   }
 
+});
+
+Template.BancoItem.helpers({
+
+   verde: function () {
+    return true;
+   }
 
 });
 
@@ -38,8 +48,4 @@ Template.BancosIndex.rendered = function () {
 };
 
 Template.BancosIndex.destroyed = function () {
-};
-
-Template.BancoItem.verde = function () {
-  return true;
 };
