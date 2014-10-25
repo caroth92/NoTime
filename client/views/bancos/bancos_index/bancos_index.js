@@ -22,8 +22,8 @@ Template.BancosIndex.helpers({
     return Bancos.find();
    },
 
-   bank: function () {
-    return Session.get('bank');
+   banco: function () {
+    return Session.get('banco');
    }
 
 });

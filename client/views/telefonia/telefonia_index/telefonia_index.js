@@ -21,6 +21,10 @@ Template.TelefoniaIndex.helpers({
     sucursalesTelefonia: function() {
     console.log("telefonia")
     return Telefonia.find();
+   },
+
+    telefonia: function () {
+    return Session.get('telefonia');
    }
 });
 

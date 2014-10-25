@@ -9,11 +9,39 @@ Template.Index.events({
    *  }
    */
    'click #Banamex' : function(e,t){
-    Session.set('bank', 'Banamex');
+    Session.set('banco', 'Banamex');
    },
 
    'click #Banorte' : function(e,t){
-    Session.set('bank', 'Banorte');
+    Session.set('banco', 'Banorte');
+   },
+
+   'click #Bancomer' : function(e,t){
+    Session.set('banco', 'Bancomer');
+   },
+
+    'click #Telcel' : function(e,t){
+    Session.set('telefonia', 'Telcel');
+   },
+
+    'click #Movistar' : function(e,t){
+    Session.set('telefonia', 'Movistar');
+   },
+
+    'click #Iusacell' : function(e,t){
+    Session.set('telefonia', 'Iusacell');
+   },
+
+    'click #Cablevision' : function(e,t){
+    Session.set('servicios', 'Cablevision');
+   },
+
+    'click #Cfe' : function(e,t){
+    Session.set('servicios', 'Comision Federal de Electricidad');
+   },
+
+    'click #Ayd' : function(e,t){
+    Session.set('servicios', 'Agua y Drenaje');
    }
 });
 
