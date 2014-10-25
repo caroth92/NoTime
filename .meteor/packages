@@ -6,5 +6,4 @@
 meteor-platform
 insecure
 iron:router
-bootstrap
-
+mizzao:bootstrap-3
