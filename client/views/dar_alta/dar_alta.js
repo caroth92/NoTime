@@ -35,7 +35,7 @@ Template.DarAlta.events({
         tiempoEspera: 0
       }
 
-      var id = Telefonia.insert(body);
+      var id = Servicios.insert(body);
       console.log(id)
       /*
       Meteor.call('agrega_banco', body, function(err, response){
