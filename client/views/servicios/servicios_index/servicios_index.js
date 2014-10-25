@@ -17,7 +17,13 @@ Template.ServiciosIndex.helpers({
    *    return Items.find();
    *  }
    */
+
+    sucursalesServicios: function() {
+    console.log("servicios")
+    return Servicios.find();
+   }
 });
+
 
 /*****************************************************************************/
 /* ServiciosIndex: Lifecycle Hooks */

@@ -1,3 +1,41 @@
 <template name="TelefoniaIndex">
-  client/views/telefonia/telefonia_index/telefonia_index.html
+	<table class="table table-bordered" style = "width:80%" align = "center">
+  		<thead>
+  			<tr>
+  				<th colspan = "10" style = "text-align: center"><h3>Telcel</h3></th>
+  			</tr>
+  			<tr>
+  				<th style = "text-align: center">Sucursal</th>
+          <th style = "text-align: center">Tiempo Espera</th>
+  				<th style = "text-align: center">Direccion</th>
+          <th style = "text-align: center">Tel&eacute;fono</th>
+          <th style = "text-align: center">Horario L-V</th>
+          <th style = "text-align: center">Horario S</th>
+          <th style = "text-align: center">Horario D</th>
+  				
+  			</tr>
+  		</thead>
+  		<tbody>
+  			{{#each sucursalesTelefonia}}
+				{{> TelefoniaItem}}
+			{{/each}}
+  		</tbody>
+	</table>
+</template>
+
+<template name="TelefoniaItem">
+	<tr>
+  		<td><label>{{sucursalParam}}</label></td>
+      <td></td>
+  		<td><label>{{direccionParam}}</label>
+  		<label>#{{numeroParam}}</label>  		
+      <label>{{coloniaParam}}</label>
+  		<label>C.P. {{cpParam}}</label></td>
+  		<td><label>{{telefonoParam}}</label></td>
+  		<td><label>{{horarioLVParam}}</label></td>
+  		<td><label>{{horarioSParam}}</label></td>
+  		<td><label>{{horarioDParam}}</label></td>
+  	</tr>
+	
+	
 </template>

@@ -17,7 +17,13 @@ Template.TelefoniaIndex.helpers({
    *    return Items.find();
    *  }
    */
+
+    sucursalesTelefonia: function() {
+    console.log("telefonia")
+    return Telefonia.find();
+   }
 });
+
 
 /*****************************************************************************/
 /* TelefoniaIndex: Lifecycle Hooks */
