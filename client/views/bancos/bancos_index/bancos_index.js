@@ -19,7 +19,7 @@ Template.BancosIndex.helpers({
    */
    sucursalesBancos: function() {
     var bancoSeleccionado = Session.get('banco');
-    return Bancos.find({bancoParam:bancoSeleccionado});
+    return Bancos.find({bancoParam:bancoSeleccionado}, {sort: {tiempoEspera: -1}});
    },
 
    banco: function () {
@@ -31,7 +31,7 @@ Template.BancosIndex.helpers({
 Template.BancoItem.helpers({
 
    verde: function () {
-    var tiempoEspera = Bancos.find()
+    return true;
    }
 
 });
