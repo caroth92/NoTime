@@ -20,7 +20,10 @@ Template.BancosIndex.helpers({
    sucursalesBancos: function() {
     console.log("bancos")
     return Bancos.find();
-   }
+   },
+
+
+
 });
 
 
@@ -35,4 +38,8 @@ Template.BancosIndex.rendered = function () {
 };
 
 Template.BancosIndex.destroyed = function () {
+};
+
+Template.BancoItem.verde = function () {
+  return true;
 };

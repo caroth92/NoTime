@@ -26,7 +26,10 @@
 <template name="BancoItem">
 	<tr>
   		<td><label>{{sucursalParam}}</label></td>
-      <td></td>
+      <td>{{#if verde}}
+            {{> Verde}}
+          {{/if}}
+      </td>
   		<td><label>{{direccionParam}}</label>
   		<label>#{{numeroParam}}</label>  		
       <label>{{coloniaParam}}</label>
@@ -38,4 +41,22 @@
   	</tr>
 	
 	
+</template>
+
+<template name = "Verde">
+  <div>
+    <label style="color: #41924B; display: block; text-align: center">VERDE</label>
+  </div>
+</template>
+
+<template name = "Amarillo">
+  <div>
+    <label style="color: #FFCC00; display: block; text-align: center">VERDE</label>
+  </div>
+</template>
+
+<template name = "Rojo">
+  <div>
+    <label style="color: #FF0000; display: block; text-align: center">VERDE</label>
+  </div>
 </template>
